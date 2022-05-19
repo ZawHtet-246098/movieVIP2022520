@@ -1,0 +1,151 @@
+.enjoy-section {
+  width: 100vw;
+  height: auto;
+  background-color: black;
+}
+
+.first-enjoy-section,
+.second-enjoy-section,
+.third-enjoy-section {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-enjoy {
+  width: 55%;
+  display: flex;
+}
+.first-enjoy.one {
+  width: 45%;
+}
+
+.second-enjoy {
+  width: 45%;
+  display: flex;
+}
+.second-enjoy.two {
+  width: 55%;
+}
+img {
+  max-width: 100%;
+  margin: auto;
+}
+.text-box,
+.second-enjoy.one {
+  position: relative;
+  width: 100%;
+  text-align: start;
+  margin: auto;
+  padding-right: 3rem;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+
+.video-div {
+  position: absolute;
+}
+
+.card-animation-container {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-55%);
+  margin: 0 auto;
+  background: #000;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 15%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.75em;
+  min-width: 15em;
+  padding: 0.2rem;
+}
+.card-animation-image {
+  height: 100%;
+  margin: 0 1rem 0 0;
+}
+.card-animation-image img {
+  max-width: 100%;
+  height: 100%;
+}
+.card-animation-text {
+  display: flex;
+  flex: 1;
+  margin: 0.4rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card-animation-text::after {
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid #000;
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+@media screen and (max-width: 950px) {
+  .first-enjoy-section,
+  .third-enjoy-section {
+    flex-direction: column;
+  }
+  .second-enjoy-section {
+    flex-direction: column-reverse;
+  }
+
+  .first-enjoy {
+    width: 100%;
+  }
+  .second-enjoy {
+    width: 100%;
+  }
+  .text-box {
+    padding: 3rem;
+    padding-bottom: 0;
+    z-index: 1;
+    text-align: center;
+  }
+  h1 {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    margin: auto;
+    margin-top: -100px;
+  }
+
+  .third-enjoy-section img,
+  .second-enjoy-section img {
+    margin-top: 0;
+  }
+
+  .second-enjoy.one {
+    padding-right: 0;
+  }
+  .card-animation-container {
+    margin: 0 auto;
+    transform: translateX(-50%);
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .text-box {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  p {
+    width: 100%;
+  }
+}

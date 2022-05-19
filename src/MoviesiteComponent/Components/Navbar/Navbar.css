@@ -1,0 +1,136 @@
+.nav-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+/* .navbar-first-section {
+  display: flex;
+  align-items: center;
+} */
+
+.logo-image {
+  width: 180px;
+  margin-top: 0;
+}
+.button {
+  position: relative;
+  display: flex;
+}
+.video {
+  padding: 0.5rem 2rem;
+  margin-left: 1rem;
+  border-radius: 3px;
+}
+.video ul {
+  margin: 0;
+  padding: 0;
+}
+.video ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.signin-button {
+  border: none;
+  background-color: rgb(235, 33, 33);
+  color: white;
+  border-radius: 3px;
+  padding: 0.4rem 2rem;
+}
+.languagesdiv {
+  margin-right: 1rem;
+  /* padding: 0.5rem 1.4rem; */
+  padding-right: 0.5rem;
+  /* padding-top: 0.2rem; */
+}
+.languages {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  padding-right: 0;
+}
+.beforeicon {
+  background-color: black;
+  color: rgb(247, 238, 238);
+  border-color: white;
+  padding: 0.5rem 2rem;
+  padding-right: 0;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.languagesdiv::before {
+  content: "\f0ac";
+  font-family: "fontawesome";
+  font-size: 1.4rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+}
+
+.signin-button a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  .nav-center {
+    padding: 1rem 1rem;
+  }
+  .navbar-first-section .logo-image {
+    margin: 0;
+  }
+
+  .navbar-first-section {
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .nav-center .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .signin-button {
+    padding: 0.2rem 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav-center .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .video {
+    visibility: hidden;
+    /* display: none; */
+  }
+  .languagesdiv {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 700px) {
+  .forvideo {
+    display: none;
+    /* margin-right: 1rem; */
+  }
+}
+@media screen and (max-width: 374px) {
+  .video {
+    visibility: visible;
+    padding: 2px 32px;
+    height: 40px;
+    margin-top: 8px;
+  }
+  .signin-button.forvideo {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+.section {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "PT Serif", serif;
+}
+.home-page,
+.singIn-page,
+.video-page {
+  height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url(https://kinkeadtech.com/wp-content/uploads/2015/02/Genesis-Add-on-for-XBMC-and-Kodi-background.jpg);
+}
+.singIn-page {
+  height: auto;
+}
+.video-page {
+  background: rgb(0, 0, 37);
+}
+.forgetpass-page {
+  background-color: black;
+}
+.breakline {
+  max-width: 100vw;
+  padding: 0;
+  height: 10px;
+  background-color: rgb(61, 61, 61);
+  margin-bottom: 2rem;
+}
+/* .swiper-slide {
+  width: 110px;
+} */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 2rem;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 95%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.swiper-button-next {
+  top: 95%;
+  right: 45%;
+  transform: translateX(50%);
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#paginationPage li {
+  width: auto;
+}
+
+@media screen and (max-width: 550px) {
+  .home-page {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .swiper-wrapper {
+    margin-top: 10rem;
+    height: 150px;
+  }
+  .swiper-button-prev {
+    left: 40%;
+  }
+  .swiper-button-next {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .swiper-wrapper {
+    margin-top: 6rem;
+    height: 150px;
+  }
+  .swiper-button-prev {
+    left: 40%;
+  }
+  .swiper-button-next {
+    right: 40%;
+  }
+}

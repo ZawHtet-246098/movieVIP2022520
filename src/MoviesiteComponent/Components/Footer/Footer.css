@@ -1,0 +1,38 @@
+.footer {
+  background-color: black;
+  padding-top: 1rem;
+}
+
+.footer-section {
+  padding: 2rem;
+  padding-right: 0;
+  width: 90vw;
+  margin: auto;
+  list-style-type: none;
+  color: gray;
+}
+.footer-section h1 {
+  font-size: 1.7rem;
+}
+.footer-links-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links-container li {
+  width: 25%;
+  margin-bottom: 1rem;
+}
+.footer-section h4 {
+  padding-top: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .footer-links-container li {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer-links-container li {
+    width: 50%;
+  }
+}

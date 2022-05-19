@@ -1,0 +1,12 @@
+.randomvideopage {
+  width: 92vw;
+  height: auto;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.radomvideocontainer {
+  /* width: 180w; */
+  color: white;
+  display: flex;
+}

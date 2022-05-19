@@ -1,0 +1,138 @@
+.maindivofvideonav {
+  height: 70px;
+  transition: 2s;
+}
+.videonavbar {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.4rem;
+  background-color: transparent;
+  background: rgb(0, 0, 31);
+
+  /* border-bottom: 1px solid white; */
+}
+.videonavbar .videologo {
+  width: 250px;
+  margin-left: 1rem;
+}
+.videonavbar ul {
+  justify-content: end;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+.videonavbar ul li {
+  width: 100px;
+}
+
+.videoSearchbar input {
+  padding: 0.5rem 2rem;
+  outline: none;
+  margin-right: 3rem;
+}
+.sidebar-toggle {
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 0 1rem;
+  margin-top: -12px;
+}
+.search-icon {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.videoSearchbartwo {
+  overflow: hidden;
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+
+  /* height: 0;
+  display: none; */
+  transform: translateY(-1000px);
+  opacity: 0;
+  transition: 0.4s;
+}
+.videoSearchbartwo input {
+  width: 100%;
+  padding: 0.2rem auto;
+}
+@media screen and (max-width: 900px) {
+  .videonavbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* justify-content: space-between; */
+  }
+  .videonavbar ul {
+    display: none;
+  }
+  .videoSearchbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .videoSearchbar input {
+    width: 300px;
+    padding: 0.5rem 2rem;
+    margin-right: 0rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .maindivofvideonav.open {
+    height: auto;
+  }
+  .videoSearchbar {
+    display: none;
+  }
+  .videonavbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .videoSearchbartwo.open {
+    display: block;
+    background-color: rgba(50, 10, 80, 0.37);
+    transform: translateY(0px);
+    opacity: 1;
+
+    /* height: auto; */
+    /* display: block; */
+  }
+  /* .videoSearchbar .searchbarform.open input {
+    width: 95%;
+  } */
+  .sidebar-toggle {
+    padding-left: 0;
+  }
+}
+/* @media screen and (max-width: 550px) {
+  .videoSearchbar input {
+    width: 200px;
+  }
+} */
+/* @media screen and (max-width: 460px) {
+  .videoSearchbar .searchbarform {
+    display: none;
+  }
+  
+} */
+@media screen and (min-width: 640px) {
+  .search-icon {
+    display: none;
+  }
+  .videoSearchbar:nth-of-type(2) {
+    display: block;
+  }
+}
+@media screen and (max-width: 370px) {
+  .videonavbar .videologo {
+    margin: 0;
+  }
+}

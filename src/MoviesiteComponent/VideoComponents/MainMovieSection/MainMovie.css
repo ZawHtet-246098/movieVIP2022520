@@ -1,0 +1,26 @@
+.movieSectionPage {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(5, 200px); */
+  gap: 2rem;
+  margin: auto;
+  justify-content: center;
+  /* width: 83vw;
+  display: grid;
+  */
+}
+@media screen and (max-width: 950px) {
+  .movieSectionPage {
+    padding-top: 7rem;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .movieSectionPage {
+    padding: 7rem 0.5rem;
+    padding-bottom: 0;
+    gap: 1.5rem;
+  }
+}

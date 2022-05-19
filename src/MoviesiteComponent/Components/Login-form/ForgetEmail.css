@@ -1,0 +1,109 @@
+.forget-email-page {
+  width: 100vw;
+  padding: 2rem;
+  background-color: rgb(248, 248, 248);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.forget-email-page h1 {
+  font-size: 2rem;
+}
+.forget-email-page p {
+  font-size: 1.2rem;
+  letter-spacing: -0.8px;
+}
+.radio-container {
+  margin-left: 2rem;
+}
+.email-radio-bottom,
+.textmessage-radio-bottom {
+  display: flex;
+  background-color: transparent;
+  color: black;
+  padding: 0;
+}
+.email-radio-bottom:hover,
+.textmessage-radio-bottom:hover {
+  border: none;
+}
+.change-button {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.change-button.active {
+  box-shadow: 0px 0px 4px 0px rgb(2, 154, 255);
+}
+.change-button.active div {
+  background-color: rgb(2, 154, 255);
+}
+.change-button div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* border: 1px solid black; */
+}
+
+.email-radio-bottom label,
+.textmessage-radio-bottom label {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.forget-email-page .form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.forget-email-page .form input {
+  border: 1px solid gray;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.forget-email-page .form button {
+  background-color: blue;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+.forget-email-page a {
+  font-size: 1.1rem;
+  letter-spacing: -0.3px;
+}
+.footer-text {
+  color: gray;
+}
+.footer-text p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 740px) {
+  .forget-email-page {
+    width: 550px;
+    margin: auto;
+  }
+  .footer-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .forget-email-page {
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+  .forget-email-page .form {
+    width: 100%;
+  }
+  .forget-email-page .form input {
+    width: 100%;
+  }
+}

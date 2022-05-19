@@ -1,0 +1,17 @@
+export default [
+  "FAQ",
+  "Help Center",
+  "Account",
+  "Media Center",
+  "Investor Relations",
+  "Jobs",
+  "Ways to Watch",
+  "Terms of Use",
+  "Privacy",
+  "cookie Preferances",
+  "Corporate Information",
+  "Contact Us",
+  "Speed Test",
+  "Legal Notices",
+  "Only on Netflix",
+];
